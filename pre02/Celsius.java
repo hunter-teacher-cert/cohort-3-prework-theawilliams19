@@ -4,18 +4,18 @@ import java.util.Scanner;
 */
 public class Celsius {
   public static void main(String[] args) {
-    int celsius, remainder;
-    double fahrenheit;
+    int remainder;
+    double celsius, fahrenheit;
     Scanner in = new Scanner(System.in);
 
   // prompt the user and get the value
   System.out.print("Enter a temperature in Celsius: ");
-  celsius = in.nextInt();
+  celsius = in.nextDouble();
 
 
   // convert and output the result
-  fahrenheit = (double) celsius * 9/5 + 32;
-  remainder = fahrenheit % (celsius * 9/5 + 32) ;
+  fahrenheit = celsius * 9/5 + 32;
+  remainder = celsius * 9/5 + 32;
   System.out.printf("%.1f C = %.1f F\n",celsius,        fahrenheit, remainder);
 }
 
