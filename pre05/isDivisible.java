@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Methods {
+public class isDivisible {
 
   public static void main(String[] args) {
     System.out.println(isDivisible(10,5));
@@ -16,3 +16,4 @@ public class Methods {
 }
   }
 }
+//Program will give true or false result based on values input.
