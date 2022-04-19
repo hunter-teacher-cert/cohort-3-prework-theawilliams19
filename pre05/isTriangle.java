@@ -11,7 +11,7 @@ public class isTriangle {
 
 		if (length1 > (length2 + length3)) {
 			return false;
-		  } else if (length2 > (length1 + length3))        {
+		  } else if (length2 > (length1 +                 length3)) {
 			   return false;
 		      
       } else if (length3 > (length1 +                  length2)) {
