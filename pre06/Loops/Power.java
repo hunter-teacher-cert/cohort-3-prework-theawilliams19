@@ -8,24 +8,15 @@ import java.util.*;
 public class Power {
 
   public static void main(String[] args) {
-    Scanner in=new Scanner(System.in);
-    double x;
-    int n;
-    System.out.print ("Type base number");
-    x=in.nextInt();
-    System.out.print ("Type exponent");
-     n=in.nextInt();
-    System.out.println(result);
+      System.out.println(power(3,2));
     }
+    
 
-  public static double power(double x, int n)    {
-    double result=1;
-      while (n>0) {
+  public static double power(double x,int n){       double result=1;
+    int i = n;
+      for (i=0;i<n;i++){
         result *=x;
-        n--;
-    return result;
         }
-        
-  
-}
+    return result;
+} 
     }  
