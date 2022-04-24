@@ -9,23 +9,21 @@ import java.util.Arrays.*;
 public class Array2 { 
 
   public static void main(String[] args) {
-    double size=100;
+    int size=100;
     
-    double[] a = powArray(size); 
+    int[] a = powArray(size);
+    System.out.println(Arrays.toString(a));
     }
 
-    public static double[] powArray(double size){
+    public static int[] powArray(int size){
           Random random = new Random();
 
-        double[] a = double [size];
-        double[] b = new double[a.length];
+        int[] a = new int [size];
         for (int i = 0; i < a.length; i++) {
-            b[i] = Math.pow(a[i], 3.0);
-
-          a[i] = random.nextDouble(100);
-            System.out.println(Arrays.toString(b));
+            a[i] = random.nextInt (100);
+            
         }
-        return b;
+        return a;
       
     }
 }
