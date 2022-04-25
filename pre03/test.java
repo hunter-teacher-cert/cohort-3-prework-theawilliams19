@@ -23,5 +23,5 @@ public static void baffle() {
 
 public static void ping() {
     System.out.println(".");
-}
+} 
   }
