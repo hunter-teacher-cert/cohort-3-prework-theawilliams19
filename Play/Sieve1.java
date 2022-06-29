@@ -8,15 +8,23 @@ import java.util.*;
 import java.util.Arrays.*;
 
 public class Sieve1 { 
+	public static void main(String[] args) {
 
-  public static void main(String[] args) {
-         int[] n = new int[121];
-         n[0] = 1;
-    System.out.println("Primary numbers: " + sum);;
+		Scanner in = new Scanner(System.in);
+		  int i=0,j=0;
+		  int n; 
+		
+	
+		System.out.println("\nWelcome to the Prime Calculator!"); 
+    System.out.print("\nThe Sieve of Eratosthenes is “an ancient algorithm for finding all prime numbers up to any “given limit.” A prime number is a positive integer that has exactly 2 factors: 1 and itself. \n\n \n\nThink of any number larger than 1 and type it. Try a large number to discover many prime numbers.\n\nThis Eratosthenes’ calculator will give you all the prime numbers between 0 and the number you chose.\n");
+
+    n= in.nextInt();
+    
+    System.out.print("The Sieve of Eratosthenes searched between 1 and " + n + " for all prime numbers possible and found: ");
     }
 
 public static boolean[] sieve(int n){
-      boolean[] result = new boolean[n];
+      boolean result [] = new boolean[n];
       for (int i=2;i<n;i++)
          result[i] = true;
       for (int number=2;number<=(int)Math.sqrt(n);number++){
