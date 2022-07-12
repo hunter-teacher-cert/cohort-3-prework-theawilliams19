@@ -1,2 +1,2 @@
 language = "bash"
-run = ""
+run = "pre08; javac *java; java Craps 8"
